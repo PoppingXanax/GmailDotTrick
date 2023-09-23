@@ -42,7 +42,7 @@ for domain in ["@gmail.com", "@googlemail.com"]:
     current_email = email.replace("@gmail.com", domain)
     dot_aliases = generate_dot_aliases(current_email)
     
-    print(f"{RED}{current_email} (for {domain}):{RESET}")
+    print(f"{CYAN}{current_email} (for {domain}):{RESET}")
     for alias in dot_aliases:
         print(f"{GREEN}{alias}")
     print("-----")
